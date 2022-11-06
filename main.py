@@ -5,7 +5,7 @@ from typing import List
 from models import Career, Gender, Roles, Update_user, User
 
 app=FastAPI()
-
+# database model
 db: List[User]=[
     User(
         id=UUID("9c60d3aa-1b19-4f68-8da9-e1e9348bef88"),
