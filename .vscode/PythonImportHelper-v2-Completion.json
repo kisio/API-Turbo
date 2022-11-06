@@ -1,0 +1,175 @@
+[
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "uuid4",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Career",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Gender",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Update_user",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "models",
+        "description": "models",
+        "isExtraImport": true,
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Gender",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Gender(str,Enum):\n    male=\"male\"\n    female=\"female\"\n    student=\"student\"\n# roles,you can specify other attributes in the same way\nclass Roles(str,Enum):\n    admin=\"admin\"\n    user=\"user\"\n    student=\"student\"\nclass Career(str,Enum):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Roles",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Roles(str,Enum):\n    admin=\"admin\"\n    user=\"user\"\n    student=\"student\"\nclass Career(str,Enum):\n    expert=\"expert\"\n    intermediate=\"intermediate\"\n    entry=\"entry\"\n# db\nclass User(BaseModel):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Career",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Career(str,Enum):\n    expert=\"expert\"\n    intermediate=\"intermediate\"\n    entry=\"entry\"\n# db\nclass User(BaseModel):\n    id:Optional[UUID]=uuid4()\n    first_name:Optional[str]\n    last_name:Optional[str]\n    middle_name:Optional[str]",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class User(BaseModel):\n    id:Optional[UUID]=uuid4()\n    first_name:Optional[str]\n    last_name:Optional[str]\n    middle_name:Optional[str]\n    gender:Gender\n    roles:List[Roles]\n    career:Optional[List[Career]]\n# update class\nclass Update_user(BaseModel):",
+        "detail": "models",
+        "documentation": {}
+    },
+    {
+        "label": "Update_user",
+        "kind": 6,
+        "importPath": "models",
+        "description": "models",
+        "peekOfCode": "class Update_user(BaseModel):\n    first_name:Optional[str]\n    last_name:Optional[str]\n    middle_name: Optional[str]\n    roles:Optional[List[Roles]]\n    career:Optional[List[Career]]",
+        "detail": "models",
+        "documentation": {}
+    }
+]
