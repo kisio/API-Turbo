@@ -4,5 +4,4 @@ CRUD Functionality using FASTAPI
 Thunder Client used for testing the APIs
 Data validation and modelling accomplished using Pydantic
 
-For elegant web view https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh 
  
